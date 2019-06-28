@@ -7,6 +7,7 @@ const layout = r => require.ensure([], ()=>r(require('@/components/layout')), 'l
 const home = r => require.ensure([], ()=>r(require('@/page/home')), 'home');
 const userlist = r => require.ensure([], ()=>r(require('@/page/userlist')), 'userlist');
 const userdetail = r => require.ensure([], ()=>r(require('@/page/userDetail')), 'userdetail');
+const custom = r => require.ensure([], ()=>r(require('@/page/custom')), 'custom');
 
 
 const router = new Router({
@@ -37,6 +38,12 @@ const router = new Router({
                 component: userdetail,
                 meta:{title: '用户详情'}
             },
+            {
+                path:'custom',
+                name:'Custom',
+                component: custom,
+                meta:{title: '自定义组件'}
+            }
          ]
         }
     ]
@@ -46,18 +53,18 @@ const router = new Router({
 
 
 
-// router.beforeEach((to, from, next) => {
-//     // to and from are both route objects. must call `next`.
-//     if(to.name === 'login'){
-//         if(isLogin()){
-//             router.push({name : 'home'})
-//         }
-//     }else{
-//         if(!isLogin()){
-//             router.push({name: 'login'})
-//         }
-//     }
-//     next();
-// })
+router.beforeEach((to, from, next) => {
+    // to and from are both route objects. must call `next`.
+    if(to.name === 'login'){
+        if(isLogin()){
+            router.push({name : 'home'})
+        }
+    }else{
+        if(!isLogin()){
+            router.push({name: 'login'})
+        }
+    }
+    next();
+})
 
 export default router;

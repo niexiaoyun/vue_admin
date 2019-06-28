@@ -23,6 +23,7 @@ service.interceptors.request.use(
 //响应拦截器
 service.interceptors.response.use(
     response =>{
+     
         const res = response.data
          if (res.code !== '0000') {
          Message({

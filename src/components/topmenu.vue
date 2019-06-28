@@ -72,7 +72,7 @@ export default {
 
 <style>
 .headerContainer {
-  width: 100%;
+  /*width: 100%;*/
   height: 70px;
   padding: 0px;
   margin: 0px;

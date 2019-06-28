@@ -5,9 +5,8 @@ module.exports = {
     outputDir : 'dist',
     //放置静态资源的文件夹
     assetsDir : 'asset',
-    //保存时不校验参数
-    lintOnSave: false, 
-    devServer:{
-        proxy: 'http://www.baidu.com'
-    }
+    //保存时是否lint代码
+    lintOnSave: true, 
+    // devServer:{
+    // }
 }

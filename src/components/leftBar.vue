@@ -18,6 +18,12 @@
         <span slot="title">首页</span>
       </el-menu-item>
 
+       <el-menu-item index="custom">
+        <i class="el-icon-menu"></i>
+        <span slot="title">自定义组件</span>
+      </el-menu-item>
+
+
       <el-submenu index="user">
         <template slot="title">
           <i class="el-icon-location"></i>

@@ -29,8 +29,8 @@ import {setToken} from '@/utils/auth'
         data: function(){
             return {
                 ruleForm: {
-                    username: '',
-                    password: ''
+                    username: 'admin',
+                    password: 'hbkj123456'
                 },
                 rules: {
                     username: [
@@ -45,8 +45,9 @@ import {setToken} from '@/utils/auth'
         methods: {
             submitForm(formName) {
                 loginRequest(this.ruleForm).then(response=>{
-                    this.$router.push({name : 'home'})
-                    setToken(response.data);
+                    // console.log(response);
+                    // this.$router.push({name : 'home'})
+                    // setToken(response.data);
                 })
             }
         }
