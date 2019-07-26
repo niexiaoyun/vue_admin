@@ -6,7 +6,7 @@ module.exports = {
     //放置静态资源的文件夹
     assetsDir : 'asset',
     //保存时是否lint代码
-    lintOnSave: true, 
+    lintOnSave: false, 
     // devServer:{
     // }
 }

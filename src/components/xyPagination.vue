@@ -98,5 +98,6 @@ export default {
 .paginationContainer {
   display: flex;
   justify-content: flex-end;
+  background-color: white
 }
 </style>

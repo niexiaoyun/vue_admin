@@ -18,23 +18,28 @@
         <span slot="title">首页</span>
       </el-menu-item>
 
-       <el-menu-item index="custom">
+      
+      
+      <el-menu-item index="chart">
+        <i class="el-icon-menu"></i>
+        <span slot="title">绘图</span>
+      </el-menu-item>
+
+      <el-menu-item index="custom">
         <i class="el-icon-menu"></i>
         <span slot="title">自定义组件</span>
       </el-menu-item>
-
 
       <el-submenu index="user">
         <template slot="title">
           <i class="el-icon-location"></i>
           <span slot="title">用户</span>
         </template>
-
-
+        
         <el-menu-item index="userlist">
           <span slot="title">用户列表</span>
         </el-menu-item>
-          <el-menu-item index="userdetail">
+        <el-menu-item index="userdetail">
           <span slot="title">用户详情</span>
         </el-menu-item>
       </el-submenu>
@@ -60,6 +65,12 @@
           <el-menu-item index="1-4-1">选项1</el-menu-item>
         </el-submenu>
       </el-submenu>
+
+
+       <el-menu-item index="device">
+        <i class="el-icon-menu"></i>
+        <span slot="title">设备列表</span>
+      </el-menu-item>
       
     </el-menu>
   </div>

@@ -15,7 +15,10 @@
     "element-ui": "^2.9.1",
     "js-cookie": "^2.2.0",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.6"
+    "vue-router": "^3.0.6",
+    "vue-echarts": "^4.0.3",
+    "echarts": "^4.2.1",
+    "vuex": "3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",

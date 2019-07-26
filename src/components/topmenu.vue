@@ -77,7 +77,7 @@ export default {
   padding: 0px;
   margin: 0px;
   /* background-color: greenyellow; */
-  background-color: lightblue;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;

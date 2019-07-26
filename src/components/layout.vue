@@ -6,9 +6,7 @@
       </div>
       <div style="height:100%;width:100%;margin-left:2px;margin-right:10px;backgroundColor:#e1e2e3">
         <topmenu></topmenu>
-        <keep-alive>
           <router-view></router-view>
-        </keep-alive>
       </div>
     </el-row>
   </div>
